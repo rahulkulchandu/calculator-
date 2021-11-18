@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/calculator.css">
+    <title>Calculator</title>
+    
+</head>
+
+<body>
+    <div class="calculator-container">
+        <form name="form">
+
+            <!-- 3  method-->
+            <!-- this is inline javascript we can use this also -->
+            <!-- <input class="btn-sz" type="button" id="seven" value="7" onclick="output.value += '7' "> -->
+
+            <input type="text" name="" id="output" readonly>
+
+            <input class="btn-sz" type="button" id="clear" onclick="clr()" value="C">
+            <input class="btn-sz" type="button" id="del" onclick="delt()" value="DEL">
+
+            <input class="btn-sz" type="button" id="per" onclick="display('%')" value="%">
+            <input class="btn-sz" type="button" id="division" onclick="display('/')" value="/">
+
+            <input class="btn-sz" type="button" id="seven" onclick="display('7')" value="7">
+            <input class="btn-sz" type="button" id="eight" onclick="display('8')" value="8">
+            <input class="btn-sz" type="button" id="nine" onclick="display('9')" value="9">
+            <input class="btn-sz" type="button" id="mul" onclick="display('*')" value="*">
+
+            <input class="btn-sz" type="button" id="four" onclick="display('4')" value="4">
+            <input class="btn-sz" type="button" id="five" onclick="display('5')" value="5">
+            <input class="btn-sz" type="button" id="six" onclick="display('6')" value="6">
+            <input class="btn-sz" type="button" id="sub" onclick="display('-')" value="-">
+
+            <input class="btn-sz" type="button" id="one" onclick="display('1')" value="1">
+            <input class="btn-sz" type="button" id="two" onclick="display('2')" value="2">
+            <input class="btn-sz" type="button" id="three" onclick="display('3')" value="3">
+            <input class="btn-sz" type="button" id="add" onclick="display('+')" value="+">
+
+            <input class="btn-sz" type="button" id="dot" onclick="display('.')" value=".">
+            <input class="btn-sz" type="button" id="zero" onclick="display('0')" value="0">
+            <input class="btn-sz" type="button" id="eql" onclick="calculate()" value="=">
+
+        </form>
+    </div>
+
+    <!-- 1st Method  -->
+    <!-- <script src="calculator1.js"></script> -->
+
+    <!-- 2nd Method  -->
+    <script src="calculator2.js"></script>
+</body>
+
+</html>
